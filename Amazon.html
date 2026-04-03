@@ -18,6 +18,7 @@
         </div>
     </div>
     </header>
+    <div class="display">
         <div class="left-part">
             <p>Select brand:</p>
             <input type="radio" id="acer" name="brand" value="acer">
@@ -28,95 +29,138 @@
             <label for="apple">Apple</label><br>
             <input type="radio" id="hp" name="brand" value="hp">
             <label for="hp">HP</label><br>
-            </hr>
+            <input type="radio" id="all-brand" name="brand" value="all">
+            <label for="all-brand">All Brands</label><br>
+
             <p>Select price range:</p>
-            <input type="radio" id="<50,000" name="price" value="<50,000">
-            <label for="<50,000"><50,000</label><br>
-            <input type="radio" id="50,000-70,000" name="price" value="50,000-70,000">
-            <label for="50,000-70,000">50,000-70,000</label><br>
-            <input type="radio" id="70,000-90,000" name="price" value="70,000-90,000">
-            <label for="70,000-90,000">70,000-90,000</label><br>
-            <input type="radio" id=">90,000" name="price" value=">90,000">
-            <label for=">90,000">>90,000</label><br>
+            <input type="radio" id="inr50000" name="price" value="inr50000">
+            <label for="inr50000">less than 50,000</label><br>
+            <input type="radio" id="inr50000-70000" name="price" value="inr50000-70000">
+            <label for="inr50000-70000">50,000-70,000</label><br>
+            <input type="radio" id="inr70000-90000" name="price" value="inr70000-90000">
+            <label for="inr70000-90000">70,000-90,000</label><br>
+            <input type="radio" id="inr90000" name="price" value="inr90000">
+            <label for="inr90000">greater than 90,000</label><br>
+            <input type="radio" id="all-price" name="price" value="all">
+            <label for="all">All Prices</label><br>
         </div>
 
         <div class="product-display">
-            <div class=product>
+            <div class="product acer inr70000-90000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoNUsuuFpURDCCPvfk8217f4SjFK36P7xOg&s" alt="acer laptop">
                 <p>Acer nitro 14.6" Laptop</p>
                 <p>80,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product hp inr50000-70000">
                 <img src="https://cdn.mos.cms.futurecdn.net/pyL3b8cis5dcmUvgbe9ygV-970-80.jpg.webp" alt="hp laptop">
                 <p>HP Pavilion 15.6" Laptop</p>
                 <p>67,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>         
+            <div class="product dell inr70000-90000">         
                 <img src="https://cdn.mos.cms.futurecdn.net/pyL3b8cis5dcmUvgbe9ygV-970-80.jpg.webp" alt="dell laptop">
                 <p>"Dell Inspiron 15.6" Laptop</p>
                 <p>76,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product hp inr50000-70000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5s3pGR6jd3qnxNPtE9XpNo9HApRryE52oDg&s" alt="hp laptop">
                 <p>HP Notebook 15.6" Laptop</p>
                 <p>61,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product hp inr90000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDrk0nr4VdmwhlkqmWe4IDgN9RYF1dpDJxnA&s" alt="hp laptop">
                 <p>HP Envy 17" Laptop</p>
                 <p>94,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product dell inr50000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxX7Cbk833CiH9EaxPeNnGDtqRTdXjfNM8dA&s" alt="dell laptop">
                 <p>Dell latitude 15.6" Laptop</p>
                 <p>49,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product acer inr70000-90000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoNUsuuFpURDCCPvfk8217f4SjFK36P7xOg&s" alt="acer laptop">
                 <p>Acer nitro 14.6" Laptop</p>
                 <p>80,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product hp inr50000-70000">
                 <img src="https://cdn.mos.cms.futurecdn.net/pyL3b8cis5dcmUvgbe9ygV-970-80.jpg.webp" alt="hp laptop">
                 <p>HP Pavilion 15.6" Laptop</p>
                 <p>67,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>         
+            <div class="product dell inr70000-90000">         
                 <img src="https://cdn.mos.cms.futurecdn.net/pyL3b8cis5dcmUvgbe9ygV-970-80.jpg.webp" alt="dell laptop">
                 <p>"Dell Inspiron 15.6" Laptop</p>
                 <p>76,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product hp inr50000-70000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5s3pGR6jd3qnxNPtE9XpNo9HApRryE52oDg&s" alt="hp laptop">
                 <p>HP Notebook 15.6" Laptop</p>
                 <p>61,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product hp inr90000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDrk0nr4VdmwhlkqmWe4IDgN9RYF1dpDJxnA&s" alt="hp laptop">
                 <p>HP Envy 17" Laptop</p>
                 <p>94,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
-            <div class=product>
+            <div class="product dell inr50000">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxX7Cbk833CiH9EaxPeNnGDtqRTdXjfNM8dA&s" alt="dell laptop">
                 <p>Dell latitude 15.6" Laptop</p>
                 <p>49,000</p>
-                <button class="add to cart">Buy</button>
+                <a href="#buy" class="popup-button">Buy</a>
             </div>
         </div>
-
+    </div>
+    <!--<div class="popup" id="buy">-->
+        <div class="popup" id="buy">
+        <h1>Your product have been added to the cart</h1>
+        <a href="./cart.html" ><button>View Cart</button></a>
+        <a href="#" class="button"><button>Close Popup</button></a>
+        </div>
+    <!--</div>-->
+    <div class="radio-slider">
+        <div class="img-slides">
+            <input type="radio" name="radio-button" id="radio1"  />
+            <input type="radio" name="radio-button" id="radio2"  />
+            <input type="radio" name="radio-button" id="radio3"  />
+            <input type="radio" name="radio-button" id="radio4"  />
+            <input type="radio" name="radio-button" id="radio5"  />
+            <div class="first slide">
+                <img src="https://p2-ofp.static.pub//fes/cms/2024/07/17/109vq5fdalv01w5jsu6vh35ncnk5jn890135.png?width=400&height=400" />
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5s3pGR6jd3qnxNPtE9XpNo9HApRryE52oDg&s" />
+            </div>
+            <div class="slide">
+                <img src="https://cdn.mos.cms.futurecdn.net/pyL3b8cis5dcmUvgbe9ygV-970-80.jpg.webp" />
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoNUsuuFpURDCCPvfk8217f4SjFK36P7xOg&s" />
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxX7Cbk833CiH9EaxPeNnGDtqRTdXjfNM8dA&s" />
+            </div>
+        </div>
+        <div class="navigation">
+            <label for="radio1" class="navigation-button"></label>
+            <label for="radio2" class="navigation-button"></label>
+            <label for="radio3" class="navigation-button"></label>
+            <label for="radio4" class="navigation-button"></label>
+            <label for="radio5" class="navigation-button"></label>
+        </div>
+    </div>
 </body>
 <footer>
+
 <a href="./about_amazon.html">About Us</a><br>
 <a href="./contact_us.html">Contact Us</a>
 </footer>
