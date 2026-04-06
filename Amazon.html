@@ -14,7 +14,7 @@
         <div class="search-box">
             <input class="search1" type="text" placeholder="type your product here to search"/>
             <button class="search2">Search</button>
-            <a class="cart" href="./cart.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3XkDya3VnYUygSs0aW6hw0aF912thHwENA&s" alt="cart image"/></a>
+            <a class="cart" href="#cart"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3XkDya3VnYUygSs0aW6hw0aF912thHwENA&s" alt="cart image"/></a>
         </div>
     </div>
     </header>
@@ -123,17 +123,34 @@
     <!--<div class="popup" id="buy">-->
         <div class="popup" id="buy">
         <h1>Your product have been added to the cart</h1>
-        <a href="./cart.html" ><button>View Cart</button></a>
+        <a href="#cart" ><button>View Cart</button></a>
         <a href="#" class="button"><button>Close Popup</button></a>
         </div>
     <!--</div>-->
-    <div class="radio-slider">
+    <div class="diffpage" id="cart">
+        <h1>My Cart</h1>
+        <p>The cart is currently empty.</p>
+        <a href="#" class="button"><button>Close Cart</button></a>
+    </div>
+    <div class="diffpage" id="about">
+        <h1>About Amazon</h1>
+        <p>Amazon is one of the world’s largest e-commerce platforms, offering a vast range of products including electronics, clothing, books, and household items. Founded by Jeff Bezos in 1994, it started as an online bookstore and quickly expanded into a global marketplace. Amazon provides services like fast delivery, secure payments, and customer reviews, making online shopping convenient and reliable. It also offers features such as Amazon Prime, which includes benefits like free shipping, streaming, and exclusive deals.</p>
+        <a href="#" class="button"><button>Home</button></a>
+    </div>
+    <div class="diffpage" id="contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any support or inquiries we’re always here to assist you quickly and efficiently.</p>
+        <a href="#" class="button"><button>Home</button></a>
+    </div>
+    <div class="slider">
         <div class="img-slides">
+
             <input type="radio" name="radio-button" id="radio1"  />
             <input type="radio" name="radio-button" id="radio2"  />
             <input type="radio" name="radio-button" id="radio3"  />
             <input type="radio" name="radio-button" id="radio4"  />
             <input type="radio" name="radio-button" id="radio5"  />
+
             <div class="first slide">
                 <img src="https://p2-ofp.static.pub//fes/cms/2024/07/17/109vq5fdalv01w5jsu6vh35ncnk5jn890135.png?width=400&height=400" />
             </div>
@@ -158,10 +175,25 @@
             <label for="radio5" class="navigation-button"></label>
         </div>
     </div>
+    <div class="accordion">
+        <div class="acc-item">
+            <input type="checkbox" id="sec1">
+            <label for="sec1">Great Indian sale</label>
+            <div class="content">
+                <p>Starting from 4th april and get upto 90% off</p>
+            </div>
+        </div>
+        <div class="acc-item">
+            <input type="checkbox" id="sec2">
+            <label for="sec2">Vouchers</label>
+            <div class="content">
+                <p>Buy 4000 or more get Prime free for 6 months</p>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
-
-<a href="./about_amazon.html">About Us</a><br>
-<a href="./contact_us.html">Contact Us</a>
+<div id="about" class="page"><a href="#about"><button>About Us</button></a><br></div>
+<div id="contact" class="page"><a href="#contact"><button>Contact Us</button></a></div>
 </footer>
 </html>

@@ -1,6 +1,7 @@
 header > .nav-bar{
     display:flex;
-    position:fixed;
+    position:sticky;
+    top:0;
     justify-content:space-between;
     flex-direction:row;
     height:5vh;
@@ -35,7 +36,7 @@ header > .nav-bar{
 .display{
     display:flex;
     justify-content:space-between;
-    padding-top:5vh;
+
 
 }
 
@@ -52,6 +53,7 @@ body{
     align-items: center;
     align-self:center;
     margin-top:2vh;
+    padding-top:1vh;
 }
 
 .left-part{
@@ -203,7 +205,7 @@ footer{
     display: flex;
 }
 
-.display:has(#all-brand:checked) > .product{
+.display:has(#all-brand:checked) .product{
     display: flex;
 }
 
@@ -216,47 +218,55 @@ footer{
     display:grid;
 }  */ 
 
-.radio-slider{
+.slider{
     width:100%;
-    height:100px;
-    background-color:#fffb00;
-    border-radius:10px;
-    display:block;
+    height:500px;
     overflow:hidden;
+    position:relative;
+    background-color:orange;
 }
 
-.image-slides{
+.img-slides{
     width:500%;
     height:100%;
     display:flex;
-    flex-direction:row;
 }
 
-.image-slides input{
+.img-slides input{
     display:none;
 }
 
 .slide{
-    width:20%;
-    transition: 2s;
+    width:16%;
+    padding:2%;
+    transition:1s;
 }
 
 .slide img{
-    width:100%;
-    height:100%;
+    width:20%;
+    height:150%;
+    margin:auto;
 }
 
 .navigation{
+    position:absolute;
+    bottom:20px;
+    width:100%;
     display:flex;
     justify-content:center;
-    gap:10px;
 }
 
 .navigation-button{
-    width:20px;
-    height:10px;
-    border-radius:2px;
-    transition:1s;
+    width:15px;
+    height:15px;
+    border:2px solid black;
+    border-radius:50%;
+    margin: 0 10px;
+    cursor:pointer;
+}
+
+.navigation-button:hover{
+    background: white;
 }
 
 #radio1:checked ~ .first{
@@ -275,8 +285,82 @@ footer{
     margin-left:-80%;
 }
 
+.accordion{
+    width: 100%;
+    height:100%;
+    background:rgb(223, 208, 7);
+    text-align: center;
+}
+
+.acc-item{
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acc-item input{
+    display:none;
+}
+
+.acc-item label{
+    display: block;
+    padding: 15px;
+    background: rgba(90, 14, 14, 0.418);
+    color: yellowgreen;
+    cursor:pointer;
+}
+
+.content{
+    max-height:0;
+    overflow:hidden;
+    background:yellow;
+    transition:0.4s;
+    padding: 0 15px;
+}
+
+input:checked ~ .content{
+    max-height:150px;
+    padding: 15px;
+}
+
+.diffpage{
+    opacity:0;
+    pointer-events:none;
+    transition:0.4s;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.diffpage:target{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    opacity:1;
+    pointer-events:all;
+    z-index: 1000;
+    background-color:orange;
+}
 #
 
-@media (max-width:600px){
+@media (max-width:800px){
+    .product-display{
+        grid-template-columns: repeat(2,1fr);
+    }
 
+    .slide img{
+    width:50%;
+    height:95%;
+    margin:auto;
+    }
 }
