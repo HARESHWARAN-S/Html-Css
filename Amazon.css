@@ -1,0 +1,398 @@
+header > .nav-bar{
+    display:flex;
+    position:sticky;
+    top:0;
+    justify-content:space-between;
+    flex-direction:row;
+    height:5vh;
+    background-color:orange;
+    width:100%;
+}
+
+.search-box{
+    display:flex;
+    justify-content:space-around;
+    align-content:center;
+    flex-basis:1200px;
+    max-width:1200px;
+    min-width:400px;
+}
+
+.search1{
+    height:3vh;
+    align-items:center;
+    align-self:center;
+    width:600px;
+}
+
+.search2{
+    height:3vh;
+    align-items:center;
+    align-self:center;
+    width:100px;
+    margin:0px;
+}
+
+.display{
+    display:flex;
+    justify-content:space-between;
+
+
+}
+
+body{
+    background-color:whitesmoke;
+    margin:0px;
+    padding:0px;
+}
+
+.cart{
+    object-fit:cover;
+    height:5vh;
+    width:auto;
+    align-items: center;
+    align-self:center;
+    margin-top:2vh;
+    padding-top:1vh;
+}
+
+.left-part{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    width:18%;
+    background-color:lightyellow;
+}
+
+.product-display{
+    left:20%;
+    gap:1%;
+    top:6vh;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(3,1fr);
+    width:80%;
+    height:80%;
+    margin-bottom:10px;
+}
+
+.product{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+#logo{
+    display:block;
+    width:100px;
+    height:5vh;
+}
+
+img{
+    width:100%;
+    height:60%;
+    display:block;
+}
+
+.product > p{
+    text-align:center;
+}
+
+footer{
+    clear:both;
+    display:flex;
+    position:static;
+    bottom:0;
+    width:100%;
+    height:5vh;
+    background-color:orange;
+    font-size:3vh;
+    justify-content:center;
+    align-items:center;
+    gap:10%;
+}
+
+.popup{
+    opacity:0;
+    pointer-events:none;
+    transition:0.4s;
+
+    position:fixed;
+    top:40%;
+    left:30%;
+    width:40%;
+    height:30%;
+    border-radius:5%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background-color:rgb(255, 196, 0);
+}
+/*
+.popup-inner{
+
+
+    width:30vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    text-color: black
+
+}*/
+
+.popup:target{
+    opacity:1;
+    pointer-events:all;
+}
+
+.popup-button{
+    width:30%;
+    height:5%;
+    border-radius:1%;
+    background-color:lightyellow;
+    text-align:center;
+    text-decoration:none;
+}
+
+.display:has(#inr50000:checked) .product,
+.display:has(#inr50000-70000:checked) .product,
+.display:has(#inr70000-90000:checked) .product,
+.display:has(#inr90000:checked) .product{
+    display:none;
+}
+
+.display:has(#inr50000:checked) .inr50000{
+    display:grid;
+}
+.display:has(#inr50000-70000:checked) .inr50000-70000{
+    display:grid;
+}   
+.display:has(#inr70000-90000:checked) .inr70000-90000{
+    display:grid;
+}
+.display:has(#inr90000:checked) .inr90000{
+    display:grid;
+}
+
+
+.display:has(#acer:checked) .product,
+.display:has(#hp:checked) .product,
+.display:has(#dell:checked) .product,
+.display:has(#apple:checked) .product{
+    display:none;
+}
+
+.display:has(#acer:checked) .acer{
+    display: flex;
+}
+
+.display:has(#hp:checked) .hp{
+    display: flex;
+}
+
+.display:has(#dell:checked) .dell{
+    display: flex;
+}
+
+.display:has(#apple:checked) .apple{
+    display: flex;
+}
+
+.display:has(#all-brand:checked) .product{
+    display: flex;
+}
+
+/*
+#acer:checked ~ .product-display .acer,
+#hp:checked ~ .product-display .hp,
+#dell:checked ~ .product-display .dell,
+#apple:checked ~ .product-display .apple,
+#all-brand:checked ~ .product-display > .product{
+    display:grid;
+}  */ 
+
+.slider{
+    width:100%;
+    height:500px;
+    overflow:hidden;
+    position:relative;
+    background-color:orange;
+}
+
+.img-slides{
+    width:500%;
+    height:100%;
+    display:flex;
+}
+
+.img-slides input{
+    display:none;
+}
+
+.slide{
+    width:16%;
+    padding:2%;
+    transition:1s;
+}
+
+.slide img{
+    width:20%;
+    height:150%;
+    margin:auto;
+}
+
+.navigation{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.navigation-button{
+    width:15px;
+    height:15px;
+    border:2px solid black;
+    border-radius:50%;
+    margin: 0 10px;
+    cursor:pointer;
+}
+
+.navigation-button:hover{
+    background: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+#radio2:checked ~ .first{
+    margin-left:-20%;
+}
+#radio3:checked ~ .first{
+    margin-left:-40%;
+}
+#radio4:checked ~ .first{
+    margin-left:-60%;
+}
+#radio5:checked ~ .first{
+    margin-left:-80%;
+}
+
+.accordion{
+    width: 100%;
+    height:100%;
+    background:rgb(223, 208, 7);
+    text-align: center;
+}
+
+.acc-item{
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.acc-item input{
+    display:none;
+}
+
+.acc-item label{
+    display: block;
+    padding: 15px;
+    background: rgba(90, 14, 14, 0.418);
+    color: yellowgreen;
+    cursor:pointer;
+}
+
+.content{
+    max-height:0;
+    overflow:hidden;
+    background:yellow;
+    transition:0.4s;
+    padding: 0 15px;
+}
+
+input:checked ~ .content{
+    max-height:150px;
+    padding: 15px;
+}
+
+.diffpage{
+    opacity:0;
+    pointer-events:none;
+    transition:0.4s;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.diffpage:target{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    opacity:1;
+    pointer-events:all;
+    z-index: 1000;
+    background-color:orange;
+}
+
+details{
+    width:100%;
+    background-color:sandybrown;
+}
+
+.dropdown{
+    text-align:center;
+    width:100%;
+    background-color:lightsalmon;
+}
+
+.dropdown button{
+    background-color:lime;
+    border:2px solid black;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:rgb(209, 223, 14);
+    width:100%;
+}
+
+.dropdown-content p{
+    display:block;
+    padding:10px;
+    color:black;
+}
+
+.dropbutton:hover ~ .dropdown-content{
+    display:block;
+}
+
+@media (max-width:800px){
+    .product-display{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .slide img{
+    width:50%;
+    height:95%;
+    margin:auto;
+    }
+}

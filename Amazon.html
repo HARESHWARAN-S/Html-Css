@@ -4,7 +4,7 @@
     <title>amazon</title>
     <link
         rel="stylesheet"
-        href="./style.css"
+        href="./Amazon.css"
     />
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="search-box">
             <input class="search1" type="text" placeholder="type your product here to search"/>
             <button class="search2">Search</button>
-            <a class="cart" href="#cart"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3XkDya3VnYUygSs0aW6hw0aF912thHwENA&s" alt="cart image"/></a>
+            <a class="cart" href="./cart.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3XkDya3VnYUygSs0aW6hw0aF912thHwENA&s" alt="cart image"/></a>
         </div>
     </div>
     </header>
@@ -120,28 +120,15 @@
             </div>
         </div>
     </div>
-    <!--<div class="popup" id="buy">-->
+    
         <div class="popup" id="buy">
         <h1>Your product have been added to the cart</h1>
-        <a href="#cart" ><button>View Cart</button></a>
+        <a href="./cart.html" ><button>View Cart</button></a>
         <a href="#" class="button"><button>Close Popup</button></a>
         </div>
-    <!--</div>-->
-    <div class="diffpage" id="cart">
-        <h1>My Cart</h1>
-        <p>The cart is currently empty.</p>
-        <a href="#" class="button"><button>Close Cart</button></a>
-    </div>
-    <div class="diffpage" id="about">
-        <h1>About Amazon</h1>
-        <p>Amazon is one of the world’s largest e-commerce platforms, offering a vast range of products including electronics, clothing, books, and household items. Founded by Jeff Bezos in 1994, it started as an online bookstore and quickly expanded into a global marketplace. Amazon provides services like fast delivery, secure payments, and customer reviews, making online shopping convenient and reliable. It also offers features such as Amazon Prime, which includes benefits like free shipping, streaming, and exclusive deals.</p>
-        <a href="#" class="button"><button>Home</button></a>
-    </div>
-    <div class="diffpage" id="contact">
-        <h1>Contact Us</h1>
-        <p>Get in touch with us for any support or inquiries we’re always here to assist you quickly and efficiently.</p>
-        <a href="#" class="button"><button>Home</button></a>
-    </div>
+
+
+
     <div class="slider">
         <div class="img-slides">
 
@@ -191,9 +178,28 @@
             </div>
         </div>
     </div>
+
+    <div class="dropdown">
+        <button class="dropbutton">Click here to know more exiting offers</button>
+        <div class="dropdown-content">
+            <p>Get 10% off on brand new iPhone 17</p>
+            <p>Buy Addidas India jersey at INR 2999 only</p>
+            <p>Flat 30% off on Sony products</p>
+        </div>
+    </div>
+
+    <details>
+        <summary>Want to post product reviews?</summary>
+        <p>Click a picture of your product to share your experience!</p>
+    </details>
+
+    <details>
+        <summary>Voucher eligibility</summary>
+        <p>Buy every month for a year to be eligible for vouchers.</p>
+    </details>
 </body>
 <footer>
-<div id="about" class="page"><a href="#about"><button>About Us</button></a><br></div>
-<div id="contact" class="page"><a href="#contact"><button>Contact Us</button></a></div>
+<div id="about" class="page"><a href="./about.html"><button>About Us</button></a><br></div>
+<div id="contact" class="page"><a href="./contact.html"><button>Contact Us</button></a></div>
 </footer>
 </html>

@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding:0;
+    opacity:0;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+    }
+}
+
+.diffpage{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: orange;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+button{
+    background-color:papayawhip;
+    border:black;
+}
+
+button:hover{
+    background-color:peachpuff;
+}

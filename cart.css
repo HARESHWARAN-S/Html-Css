@@ -1,0 +1,69 @@
+body{
+    margin:0;
+    padding:10px;
+    opacity:0;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+    }
+}
+
+#cartbutton:checked ~ #cart-content{
+    display:block;
+}
+
+#ordersbutton:checked ~ #orders-content{
+    display:block;
+}
+
+section{
+    width:100%;
+    height:100%;
+    padding-top:30px;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+label{
+    background-color:rebeccapurple;
+    border:2px solid black;
+    padding: 20px;
+    color:white;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.tab-content{
+    display:none;
+}
+
+
+
+.diffpage{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: orange;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+button{
+    background-color:papayawhip;
+    border:black;
+}
+
+button:hover{
+    background-color:peachpuff;
+}
